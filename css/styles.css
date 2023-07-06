@@ -755,3 +755,99 @@ img {
 .modal-form-input:focus + .modal-form-icon {
     fill: var(--bright-blue-cl);
 }
+.modal-form-comment {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.48px;
+    color: var(--lights-late-cl);
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    resize: none;
+    outline: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-comment::placeholder {
+    color: currentColor;
+}
+.modal-form-comment:focus {
+    border-color: var(--bright-blue-cl);
+}   
+.modal-form-agreement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+
+.modal-form-custom-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+    border-color: var(--dark-blue-bgd);
+    background-color: var(--dark-blue-bgd);
+}
+
+.modal-form-checkbox-icon {
+    opacity: 0;
+}
+.modal-form-checkbox:checked+.modal-form-custom-checkbox > .modal-form-checkbox-icon {
+    opacity: 1;
+}
+
+.modal-form-agreemen-desc {
+    color: #8E8F99;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.48px;
+}
+
+.modal-form-link {
+    color: var(--bright-blue-cl);
+    text-decoration: underline;
+}
+.form-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;  
+}
+.footer-form-container {
+ 
+}
+.form-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-white-bgd);
+    margin-bottom: 16px;
+}
+
+.form-container {}
+
+.form-email {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--main-white-bgd);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn {}
+
+.btn-icon {}
